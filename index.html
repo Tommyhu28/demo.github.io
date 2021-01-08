@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name = "keywords" content="CSS, JavaScript, HTML">
+	<meta name = "description" content="HTML CSS Javascript practice document">
+	<meta name = "author" content="Tommy 'BOAT' Hu">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Practice</title>
+
+	<style>
+/* Add comment like this */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  margin: 0;
+}
+
+h1 {
+  padding: 20px;
+  background-color: lightgray;
+  font-family: 'Arial Black',cursive;
+  font-size: 5vw;
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.columns {
+  float: left;
+	padding: 15px;
+	text-align: center;
+	border-color: #333333;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.columns.side {
+	width: 25%;
+}
+
+.columns.middle {
+	width: 50%;
+}
+
+
+a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+a:active {
+	color:green;
+	background-color: transparent;
+	text-decoration: underline;
+	target: "_blank";
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.tiertable {
+float:left;
+width:60%;
+}
+
+table,tr,td {
+	border: 2px solid black;
+	padding: 2px;
+	text-align: center;
+
+}
+
+tr:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+p {
+	font-size: medium;
+	font-family: Calibri,cursive;
+}
+
+footer {
+	text-align: left;
+	position: relative;
+	bottom: 10px;
+}
+@media screen and (max-width:600px) {
+	.columns.side, .columns.middle {
+		width: 100%;
+	}
+}
+
+	</style>
+	<!-- The above style formatting typically applies to each tag in the body section. However, you can override it
+	 by changing them in each tag below-->
+</head>
+
+<body>
+
+	<h1>Website header &#128512;</h1>
+<nav><a href="https://epic7x.com/tier-list/" title="tier list" target="_blank">Tier List</a></nav>
+
+<div class = "row">
+	<div class="columns side">
+		<h2>Side column</h2>
+		<p> Content</p>
+	</div>
+	<div class="columns middle">
+		<h2>Main column</h2>
+		<p>content</p>
+	</div>
+	<div class="columns side">
+		<h2>Side column</h2>
+		<p>content</p>
+	</div>
+
+</div>
+
+	<div class="tiertable">
+		<table style="width: fit-content">
+			<caption>Epic 7 Heroes List</caption>
+			<tr><th> Star </th> <th> Name </th> <th> Element </th></tr>
+			<tr><td>5</td><td >Arbiter Vildred </td> <td style="background-color: mediumpurple" > Dark </td></tr>
+			<tr><td>5</td> <td >Kayron</td> <td style="background-color: lightcoral"> Fire </td></tr>
+			<tr><td>5</td><td>Spectre Tenebria</td><td style="background-color: mediumpurple">Dark</td></tr>
+		</table>
+	</div>
+
+
+	<!-- <img src="black_cat.jpg" style="max-width: 100%;height: auto;"> <br><br><br> -->
+	<!--<iframe src="Notre-Dame%20de%20Paris,%20by%20Victor%20Hugo.html" style="border: none;" title="Notre Dame of Paris Ebook"></iframe> -->
+
+
+	<footer>
+		<p>Address:</p>
+		<address id="adrs" style="font-size: medium; float:left"> Honestvile, Tenebrium Island <br> #1431, Room 2 <br> Nihon Go <br> </address>
+	</footer>
+
+<!-- This is a comment that is not shown in the web page -->
+
+
+</body>
+</html>
